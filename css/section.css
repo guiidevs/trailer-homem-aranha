@@ -1,0 +1,142 @@
+
+.info{
+    width: 80%;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    inset: 0;
+}
+.info img{
+    width: 100%;
+    max-width: 900px;
+}
+.sinopse{
+    width: 80%;
+    margin: 30px 0;
+    font-size: 1.3rem;
+    color: white;
+    text-align: justify;
+    line-height: 25px;
+}
+.dinamico{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.comprar button:nth-child(1){
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border: 3px solid rgb(4, 4, 114);
+    color: white;
+    background: linear-gradient(10deg, rgb(4, 4, 114) 10%, rgb(143, 4, 4) 100%);
+    margin: 10px 20px;
+    padding: 5px 10px;
+    transition: all 0.5s;
+}
+.comprar button:nth-child(2){
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border: 3px solid rgb(4, 4, 114);
+    color: white;
+    background: transparent;
+    margin: 10px 20px;
+    padding: 5px 10px;
+    transition: all 0.5s;
+}
+.comprar button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding: 30px;
+    transform: translateY(-20px);
+}
+.galeria img{
+    width: 80px;
+    height: 130px;
+    transition: 0.5s;
+}
+.galeria img:hover{
+    transform: scale(1.2) translateY(-10px);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.imagens{
+    z-index: -2;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+#video{
+    width: 120%;
+    height: 100vh;
+}
+.imagens video{
+    width: 120%;
+    height: 140vh;
+    object-fit: cover;
+    object-position: center;
+    transform: translateY(-100px);
+}
+.imagens img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+@media(max-width: 1000px) {
+    .nav{
+        font-size: 1rem;
+        justify-content: space-around;
+        gap: 0;
+    }
+    .info img{
+        width: 300px;
+    }
+    .info{
+        margin: 1vh auto;
+    }
+    .redes{
+        position: absolute;
+        flex-direction: column;
+        gap: 0;
+        right: 15px;
+        top: 25vh;
+    }
+    .redes i{
+        padding: 20px;
+    }
+    .sinopse{
+        font-size: 0.9rem;
+        margin: 20px;
+    }
+    .dinamico{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .comprar button:nth-child(1){
+        margin-left: 50px;
+    }
+    .comprar button:nth-child(2){
+        margin-left: 50px;
+    }
+    .galeria{
+        justify-content: center;
+        gap: 20px;
+    }
+    .galeria img{
+        flex-direction: row;
+        width: 100px;
+        height: 100px;
+    }
+}
